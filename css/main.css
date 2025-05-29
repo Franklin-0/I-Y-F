@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+}
+
+html, body {
+    overflow-x: hidden; 
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#F8F9FA;
+    color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    margin-left: 80px;
+    font-size: large;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        margin-left: 0;
+        overflow-x: auto; 
+        white-space: nowrap; 
+        flex-wrap: nowrap; 
+        -webkit-overflow-scrolling: touch; 
+        padding-bottom: 10px; 
+    }
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 16px;
+    transition: 
+        color 0.3s ease,
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center; 
+}
+
+.navbar a:hover {
+    color: orange;
+    transform: scale(1.35); 
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
+.iyf:hover {
+    color: black;
+    transform: scale(1.35);
+}
