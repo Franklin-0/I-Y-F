@@ -89,7 +89,7 @@
 
 .faq-container {
   max-width: 1200px;
-  margin:  auto 0px;
+  margin:  auto s0px;
   display: flex;
   gap: 41px;
   margin: auto 140px ;
@@ -289,3 +289,12 @@
     height: auto;
   }
 }
+.faq-question .icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.faq-question .icon.rotate {
+  transform: rotate(180deg);
+}
+
