@@ -55,13 +55,18 @@
     width: 95%; 
     height: auto; 
     margin: auto 20px; 
+    border-radius: 0%;
   }
 }
+
+
 .page-center {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 65vh;
+  padding: 60px 20px;
+  min-height: auto;
+  margin-bottom: 40px;
 }
 
 .horizontal-section {
@@ -125,10 +130,13 @@
     flex-direction: column;
   }
 }
+
 #courses {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   overflow: hidden;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 .section-title {
@@ -141,25 +149,21 @@
 
 .course-container {
   position: relative;
-  margin: auto 120px;
-  padding: 0 10px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto; 
   overflow: hidden;
-  width: 100%;
-  max-width: 2000px;
 }
 
 .course-gallery {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; 
   gap: 30px;
-  overflow-x: auto;
-  margin: auto 100px;
+  justify-content: center;
+  margin: auto;
   padding: 10px 0;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
+
 .course-gallery::-webkit-scrollbar {
   display: none;
 }
@@ -201,6 +205,7 @@
   cursor: pointer;
   z-index: 10;
 }
+
 .prev-btn {
   left: 10px;
 }
@@ -232,11 +237,17 @@
   }
 
   .course-gallery {
-    margin: 0;
-    padding: 10px 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-x: hidden;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: start;
+  }
+
+  .course-gallery::-webkit-scrollbar {
+    display: none;
   }
 
   .course-img {
@@ -252,9 +263,8 @@
     width: 90%;
     max-width: 800px;
     height: auto;
-    border-radius: 25px;
+    border-radius: 0%;
   }
-
 
   .nav-btn {
     width: 35px;
@@ -287,7 +297,6 @@
     height: auto;
     border-radius: 20px;
   }
-
 
   .nav-btn {
     top: auto;

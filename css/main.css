@@ -19,16 +19,18 @@ body {
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 25px;
-    margin-left: 80px;
-    font-size: large;
-    padding-top: 3%;
-    padding-bottom: 3%;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  font-size: large;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
+
+
 
 @media (max-width: 768px) {
     .navbar ul {

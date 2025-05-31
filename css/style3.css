@@ -41,8 +41,8 @@
 
 /* Keep your existing hover-img and enroll-button styles */
 .hover-img {
-  width: 950px;
-  margin: auto;
+  width: 1000px;
+  margin: 0 auto;
   height: 400px;
   border-radius: 16px;
   transition: transform 0.3s ease;
@@ -85,17 +85,18 @@
 .faq-section {
   background-color: #f0f4f8;
   padding: 60px 20px;
+  margin: auto;
 }
 
 .faq-container {
   max-width: 1200px;
-  margin:  auto s0px;
+  margin: 0 auto; 
+  padding: 0 20px; 
   display: flex;
   gap: 41px;
-  margin: auto 140px ;
   flex-wrap: wrap;
-
 }
+
 
 .faqh2 {
   line-height: 1.0;

@@ -141,4 +141,23 @@
   background-color: #1e5e48;
 }
 
+.final-img{
+  width: 500px; 
+  height: 300px; 
+  border-radius: 40px
+}
+
+@media (max-width: 600px) {
+  .final-img {
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 15px auto;
+    height: auto;
+  }
+}
+
+
+
+
+
 
